@@ -1,0 +1,32 @@
+{
+  "name": "حساب‌یار ۲.۲.۲ — استودیوی مالی دوزبانه قبیله",
+  "short_name": "حساب‌یار",
+  "description": "مدیریت مالی شخصی و کسب‌وکار در دو دفتر مستقل با ۹ تم هماهنگ با لوگوی قبیله",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "../",
+  "scope": "../",
+  "display": "standalone",
+  "background_color": "#12243B",
+  "theme_color": "#101B2E",
+  "icons": [
+    {
+      "src": "night-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "night-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "night.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

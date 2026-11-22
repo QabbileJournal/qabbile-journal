@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="88" y1="64" x2="424" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#25376E"/>
+      <stop offset="0.55" stop-color="#142453"/>
+      <stop offset="1" stop-color="#111735"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="148" y1="118" x2="326" y2="362" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.22" stop-color="#CFDCFF"/>
+      <stop offset="0.48" stop-color="#80B6FF"/>
+      <stop offset="0.78" stop-color="#4B86EC"/>
+      <stop offset="1" stop-color="#DCEAFF"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="116" y1="98" x2="390" y2="414" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8CCFF" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#6599F6" stop-opacity="0.08"/>
+    </linearGradient>
+    <filter id="softGlow" x="90" y="70" width="332" height="372" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.25 0" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  <rect x="30" y="30" width="452" height="452" rx="78" stroke="url(#ring)" stroke-width="2"/>
+  <circle cx="256" cy="256" r="171" stroke="url(#ring)" stroke-width="2" opacity="0.65"/>
+  <g filter="url(#softGlow)">
+    <path d="M162 372L229 145" stroke="url(#metal)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M221 372L288 145" stroke="url(#metal)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M280 372L326 216C339 177 365 151 399 142" stroke="url(#metal)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
