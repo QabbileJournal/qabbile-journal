@@ -2,6 +2,12 @@
 (function () {
   'use strict';
   const pairs = [
+    ['حساب‌یار ۲.۳','Hesabyar 2.3'],
+    ['راهنمای استفاده','Help center'],
+    ['راهنمای حساب‌یار','Hesabyar Help Center'],
+    ['آموزش قدم‌به‌قدم تمام بخش‌های برنامه','Step-by-step help for every feature'],
+    ['راهنمای این بخش','Help for this page'],
+    ['راهنما','Help'],
     ['خروجی CSV آماده شد.','CSV export is ready.'],['فایل پشتیبان هر دو دفتر آماده شد. آن را در جایی امن نگهداری کن.','Backup for both ledgers is ready. Keep the file in a safe place.'],['بازیابی، تمام اطلاعات فعلی هر دو دفتر را جایگزین می‌کند. مطمئنی؟','Restoring will replace all current records in both ledgers. Continue?'],['پشتیبان با موفقیت بازیابی شد.','Backup restored successfully.'],['فرمت پشتیبان حساب‌یار معتبر نیست.','Invalid Hesabyar backup format.'],['فقط تصویر یا PDF پذیرفته می‌شود.','Only images and PDF files are supported.'],['فایل خوانده نشد.','Could not read the file.'],['افزودن','Add'],['خالص درآمد و هزینه','Net income / expenses'],['شامل تسویه‌ها و گردش سرمایه','Includes settlements and capital flows'],['در شش ماه گذشته','Over the last six months'],['همه حساب‌ها','All accounts'],['هنوز حسابی وجود ندارد','No accounts yet'],['برای شروع، یک حساب اضافه کن.','Start by adding an account.'],['نمایش همه','View all'],['حساب‌یار ۲.۱','Hesabyar 2.1'],['حساب‌یار ۲.۲','Hesabyar 2.2'],['حساب‌یار ۲.۲.۱','Hesabyar 2.2.1'],['راست‌به‌چپ · RTL','Right to left · RTL'],['فضای مالی شخصی','Personal finance'],['حساب‌یار ۲.۱ — حسابداری دوزبانه','Hesabyar 2.1 — bilingual finance'],['حساب‌یار ۲.۲ | استودیوی مالی قبیله','Hesabyar 2.2 | Qabbile Finance Studio'],['نمای مالی شخصی','Personal financial overview'],['نمای مالی کسب‌وکار','Business financial overview'],['دسته‌بندی‌های دفتر شخصی','Personal ledger categories'],['دسته‌بندی‌های دفتر کسب‌وکار','Business ledger categories'],['راست‌به‌چپ','Right to left'],['شامل تسویه‌ها و گردش سرمایه، بدون انتقال','Includes settlements and capital movements, excludes transfers'],
     ['حساب‌یار','Hesabyar'],['حساب‌یار ۲.۰','Hesabyar 2.1'],
     ['داشبورد','Dashboard'],['گردش حساب‌ها','Transaction ledger'],['حساب‌ها و کیف پول‌ها','Accounts & wallets'],['طلب‌ها و بدهی‌ها','Receivables & payables'],['گزارش‌های مالی','Financial reports'],['تنظیمات','Settings'],

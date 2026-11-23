@@ -97,3 +97,90 @@ html[dir="ltr"] .hero,.hero-value{font-variant-numeric:tabular-nums}
 /* Qabbile original mark: use the exact Journal SVG, without reinterpretation. */
 .brand-logo.tribe-logo{background:transparent;box-shadow:none;border-radius:13px;overflow:hidden;flex-shrink:0;}
 .brand-logo.tribe-logo img{display:block;width:48px;height:48px;object-fit:contain;}
+/* Hesabyar 2.3 | premium bilingual help center and guided onboarding */
+.sidebar{overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.top-heading-row{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
+.page-help-btn{display:inline-flex;align-items:center;gap:5px;border:1px solid color-mix(in srgb,var(--accent) 26%,var(--line));border-radius:999px;background:var(--accent-faint);color:var(--accent);font-size:11px;font-weight:800;padding:5px 11px;white-space:nowrap;transition:transform .16s,border-color .16s}
+.page-help-btn:hover{transform:translateY(-1px);border-color:var(--accent)}
+.help-center{display:grid;gap:23px;max-width:1240px;margin:0 auto}
+.help-hero{position:relative;isolation:isolate;overflow:hidden;min-height:265px;padding:36px 40px;background:linear-gradient(115deg,var(--hero),var(--hero2));color:var(--hero-text);border-radius:24px;box-shadow:0 16px 48px rgba(10,20,35,.1);display:flex;align-items:center}
+.help-hero:after{content:'';position:absolute;width:430px;height:430px;inset-inline-end:-120px;top:-210px;border:1px solid rgba(255,255,255,.13);border-radius:50%;box-shadow:0 0 0 48px rgba(255,255,255,.025),0 0 0 100px rgba(255,255,255,.02);z-index:-1}
+.help-hero-ornament{position:absolute;inset-inline-end:7%;top:50%;transform:translateY(-50%) rotate(-10deg);opacity:.12;pointer-events:none}
+.help-hero-ornament svg{width:160px;height:160px;stroke-width:1}
+.help-hero-copy{position:relative;max-width:760px;z-index:1}
+.help-kicker{font-size:10px;letter-spacing:2.5px;direction:ltr;display:inline-block;opacity:.73;font-weight:800}
+.help-hero h3{font-size:clamp(23px,3.1vw,36px);font-weight:900;letter-spacing:-.9px;line-height:1.5;margin:7px 0 7px}
+.help-hero p{max-width:640px;font-size:13px;line-height:2.05;opacity:.82}
+.help-hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:25px}
+.help-start{display:inline-flex;align-items:center;gap:9px;background:#fff;color:#20345c;border:1px solid rgba(255,255,255,.85);border-radius:12px;padding:11px 18px;min-height:44px;font-weight:850;font-size:12px;box-shadow:0 8px 23px rgba(0,0,0,.11)}
+.help-start:hover{background:#f2f6ff}
+.help-hero-actions>span{display:flex;align-items:center;gap:6px;font-size:11px;opacity:.85}
+.help-search-panel{padding:25px 26px 29px;border:1px solid var(--line);border-radius:21px;background:var(--panel);box-shadow:var(--shadow)}
+.help-search-field{display:flex;align-items:center;gap:11px;background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:0 15px;color:var(--accent);transition:border-color .16s}
+.help-search-field:focus-within{border-color:var(--accent)}
+.help-search-field .field{flex:1;min-width:0;height:52px;border:0;background:transparent;box-shadow:none!important;padding:9px 0;color:var(--text);font-size:13px;outline:none!important}
+.help-search-field .field::-webkit-search-cancel-button{cursor:pointer}
+.help-groups{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:18px 0 27px}
+.help-filter{border:1px solid var(--line);border-radius:999px;padding:7px 13px;background:var(--panel);color:var(--muted);font-size:11px;font-weight:750;transition:all .15s}
+.help-filter:hover{border-color:var(--accent);color:var(--accent)}
+.help-filter.active{background:var(--accent-faint);border-color:color-mix(in srgb,var(--accent) 42%,var(--line));color:var(--accent)}
+.help-list-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}
+.help-list-head h3{font-size:17px;font-weight:900}
+.help-list-head span{font-size:11px;color:var(--muted)}
+.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.guide-card{display:flex;flex-direction:column;align-items:flex-start;gap:14px;min-width:0;min-height:220px;text-align:start;border:1px solid var(--line);border-radius:17px;background:var(--panel2);padding:20px;color:var(--text);transition:transform .18s,border-color .18s,box-shadow .18s}
+.guide-card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 42%,var(--line));box-shadow:0 13px 28px rgba(18,30,54,.08)}
+.guide-card-icon{width:43px;height:43px;display:grid;place-items:center;background:var(--accent-faint);border-radius:12px;color:var(--accent)}
+.guide-card-body{display:flex;flex-direction:column;align-items:flex-start;gap:5px;flex:1;width:100%}
+.guide-card-group{font-size:10px;color:var(--subtle);font-weight:750}
+.guide-card strong{font-size:15px;font-weight:900;line-height:1.7}
+.guide-card-summary{font-size:11px;line-height:1.95;color:var(--muted);min-height:43px}
+.guide-card-footer{margin-top:auto;padding-top:13px;display:flex;align-items:center;gap:6px;color:var(--accent);font-weight:850;font-size:11px}
+.guide-card-footer svg{transform:rotate(180deg)}
+html[dir=ltr] .guide-card-footer svg{transform:rotate(0deg)}
+.guide-no-results{grid-column:1/-1;min-height:220px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;text-align:center;color:var(--muted)}
+.guide-no-results strong{color:var(--text)}.guide-no-results p{font-size:11px}
+.help-faq{border:1px solid var(--line);border-radius:21px;background:var(--panel);padding:25px 28px;box-shadow:var(--shadow)}
+.help-faq-head{display:flex;align-items:center;gap:13px;margin-bottom:18px}
+.help-faq-mark{width:44px;height:44px;display:grid;place-items:center;background:var(--accent-faint);color:var(--accent);border-radius:13px}
+.help-faq-head h3{font-size:17px;font-weight:900}.help-faq-head p{font-size:11px;color:var(--muted)}
+.help-faq-item{border-top:1px solid var(--line)}
+.help-faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none;cursor:pointer;padding:15px 2px;font-weight:750;font-size:12px}
+.help-faq-item summary::-webkit-details-marker{display:none}
+.help-faq-item summary svg{color:var(--accent);transition:transform .2s}
+.help-faq-item[open] summary svg{transform:rotate(45deg)}
+.help-faq-item p{color:var(--muted);font-size:12px;line-height:2;padding:0 2px 17px}
+.help-endnote{display:flex;align-items:center;gap:11px;border:1px solid color-mix(in srgb,var(--accent) 20%,var(--line));background:var(--accent-faint);border-radius:15px;padding:15px 18px;font-size:11px;color:var(--text)}
+.help-endnote svg{color:var(--accent)}.help-endnote span{flex:1}
+.help-endnote button{color:var(--accent);background:transparent;border:0;font-size:11px;font-weight:850;text-decoration:underline;white-space:nowrap}
+.guide-detail{display:grid;gap:19px}.guide-detail-lead{color:var(--muted);font-size:13px;line-height:2}
+.guide-detail-label{font-size:11px;font-weight:850;color:var(--accent);letter-spacing:.2px}
+.guide-steps{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.guide-steps li{display:flex;align-items:flex-start;gap:13px;padding:12px 13px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;font-size:12px;line-height:2}
+.guide-step-number{flex:0 0 27px;height:27px;border-radius:9px;background:var(--accent-faint);color:var(--accent);display:grid;place-items:center;font-weight:900;font-size:11px}
+.guide-tip{display:flex;align-items:flex-start;gap:11px;background:var(--accent-faint);border:1px solid color-mix(in srgb,var(--accent) 23%,var(--line));border-radius:13px;padding:14px;color:var(--accent)}
+.guide-tip p{display:grid;gap:4px}.guide-tip strong{font-size:12px}.guide-tip span{color:var(--text);font-size:11px;line-height:2}
+.guide-detail-cta{justify-self:start;min-width:150px}
+#guide-welcome-root:empty,#tour-root:empty{display:none}
+.guide-welcome-backdrop{position:fixed;inset:0;z-index:150;background:rgba(8,15,31,.76);backdrop-filter:blur(10px);display:grid;place-items:center;padding:18px}
+.guide-welcome{width:min(540px,100%);max-height:90dvh;overflow:auto;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:24px;padding:35px;box-shadow:0 35px 90px rgba(0,0,0,.25);text-align:center}
+.guide-welcome-emblem{width:67px;height:67px;display:grid;place-items:center;margin:0 auto 14px;border-radius:19px;background:var(--accent-faint);color:var(--accent)}
+.guide-welcome-kicker{display:block;color:var(--subtle);font-size:10px;letter-spacing:2px;direction:ltr}
+.guide-welcome h2{font-size:25px;font-weight:900;margin:10px 0 9px}.guide-welcome>p{font-size:12px;color:var(--muted);line-height:2.1}
+.guide-welcome-points{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:24px 0 28px}
+.guide-welcome-points span{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:750;background:var(--panel2);border:1px solid var(--line);padding:7px 10px;border-radius:999px}
+.guide-welcome-points svg{color:var(--green)}
+.guide-welcome-actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap}
+.guide-welcome-actions .btn{min-width:150px}
+#tour-root{position:fixed;inset:0;z-index:130;pointer-events:none}
+.tour-spotlight{position:fixed;border:2px solid #fff;border-radius:13px;box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 70%,transparent),0 0 0 9999px rgba(4,9,20,.78);pointer-events:none;transition:all .22s ease;z-index:1}
+.tour-card{position:fixed;z-index:2;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:18px;padding:19px 20px;box-shadow:0 20px 75px rgba(0,0,0,.32);pointer-events:auto;direction:inherit}
+.tour-top{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:10px;font-weight:800;color:var(--accent)}
+.tour-top button{width:27px;height:27px;border-radius:8px;display:grid;place-items:center;border:1px solid var(--line);color:var(--muted);background:var(--panel2)}
+.tour-top button svg{transform:rotate(45deg)}
+.tour-progress{display:flex;gap:5px;margin:14px 0 17px}.tour-progress i{flex:1;height:4px;background:var(--line);border-radius:99px}.tour-progress i.done{background:var(--accent)}
+.tour-card h3{font-size:17px;font-weight:900;line-height:1.6}.tour-card p{font-size:11px;line-height:2;color:var(--muted);margin:6px 0 17px}
+.tour-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px}.tour-bottom>span{color:var(--subtle);font-size:11px;direction:ltr}.tour-bottom>div{display:flex;gap:7px}
+@media(max-width:1180px){.guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:630px){.top-heading-row{gap:6px}.page-help-btn{padding:4px 7px;font-size:0;border-radius:9px}.page-help-btn svg{width:17px;height:17px}.page-help-btn span{display:none}.help-center{gap:13px}.help-hero{padding:25px 21px;min-height:248px;border-radius:17px}.help-hero h3{font-size:25px}.help-hero p{font-size:11px;line-height:2}.help-hero-ornament{opacity:.07}.help-hero-actions{gap:10px;margin-top:17px}.help-start{min-height:40px;font-size:11px}.help-hero-actions>span{font-size:9px}.help-search-panel{padding:17px 14px;border-radius:15px}.help-search-field .field{height:46px}.help-groups{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px;margin:13px -2px 19px;padding:2px}.help-groups::-webkit-scrollbar{display:none}.help-filter{white-space:nowrap;flex-shrink:0;padding:7px 10px;font-size:10px}.help-list-head h3{font-size:15px}.guide-grid{grid-template-columns:1fr;gap:9px}.guide-card{flex-direction:row;gap:12px;min-height:0;padding:15px;border-radius:13px}.guide-card-icon{width:37px;height:37px;flex-shrink:0;border-radius:10px}.guide-card-icon svg{width:19px;height:19px}.guide-card strong{font-size:13px}.guide-card-summary{min-height:0;font-size:10px}.guide-card-footer{padding-top:8px;font-size:10px}.help-faq{padding:17px 15px;border-radius:15px}.help-faq-head h3{font-size:15px}.help-faq-item summary{font-size:11px}.help-endnote{flex-wrap:wrap;padding:12px 13px}.help-endnote span{flex-basis:calc(100% - 36px)}.help-endnote button{margin-inline-start:27px}.guide-welcome{padding:27px 19px;border-radius:19px}.guide-welcome h2{font-size:21px}.guide-welcome-actions .btn{flex:1;min-width:125px}.tour-card{left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom));top:auto;max-height:45dvh;overflow:auto;padding:15px 16px}.tour-card h3{font-size:15px}.tour-card p{margin-bottom:11px}}
+@media print{.page-help-btn,#guide-welcome-root,#tour-root{display:none!important}.help-hero{box-shadow:none}.guide-card{break-inside:avoid}.help-faq{break-inside:avoid}}
