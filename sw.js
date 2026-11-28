@@ -1,5 +1,5 @@
-/* QABBILE EDGE LAB v2.2 — versioned offline cache */
-const CACHE='qabbile-edge-lab-2-2-burgundy-1';
+/* QABBILE EDGE LAB v3.1 — versioned offline cache */
+const CACHE='qabbile-edge-lab-3-1-atelier-1';
 const STATIC=['./','./index.html','./icon.svg','./icon-192.png','./icon-512.png','./manifest.webmanifest'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(STATIC)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('qabbile-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
