@@ -184,3 +184,69 @@ html[dir=ltr] .guide-card-footer svg{transform:rotate(0deg)}
 @media(max-width:1180px){.guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:630px){.top-heading-row{gap:6px}.page-help-btn{padding:4px 7px;font-size:0;border-radius:9px}.page-help-btn svg{width:17px;height:17px}.page-help-btn span{display:none}.help-center{gap:13px}.help-hero{padding:25px 21px;min-height:248px;border-radius:17px}.help-hero h3{font-size:25px}.help-hero p{font-size:11px;line-height:2}.help-hero-ornament{opacity:.07}.help-hero-actions{gap:10px;margin-top:17px}.help-start{min-height:40px;font-size:11px}.help-hero-actions>span{font-size:9px}.help-search-panel{padding:17px 14px;border-radius:15px}.help-search-field .field{height:46px}.help-groups{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px;margin:13px -2px 19px;padding:2px}.help-groups::-webkit-scrollbar{display:none}.help-filter{white-space:nowrap;flex-shrink:0;padding:7px 10px;font-size:10px}.help-list-head h3{font-size:15px}.guide-grid{grid-template-columns:1fr;gap:9px}.guide-card{flex-direction:row;gap:12px;min-height:0;padding:15px;border-radius:13px}.guide-card-icon{width:37px;height:37px;flex-shrink:0;border-radius:10px}.guide-card-icon svg{width:19px;height:19px}.guide-card strong{font-size:13px}.guide-card-summary{min-height:0;font-size:10px}.guide-card-footer{padding-top:8px;font-size:10px}.help-faq{padding:17px 15px;border-radius:15px}.help-faq-head h3{font-size:15px}.help-faq-item summary{font-size:11px}.help-endnote{flex-wrap:wrap;padding:12px 13px}.help-endnote span{flex-basis:calc(100% - 36px)}.help-endnote button{margin-inline-start:27px}.guide-welcome{padding:27px 19px;border-radius:19px}.guide-welcome h2{font-size:21px}.guide-welcome-actions .btn{flex:1;min-width:125px}.tour-card{left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom));top:auto;max-height:45dvh;overflow:auto;padding:15px 16px}.tour-card h3{font-size:15px}.tour-card p{margin-bottom:11px}}
 @media print{.page-help-btn,#guide-welcome-root,#tour-root{display:none!important}.help-hero{box-shadow:none}.guide-card{break-inside:avoid}.help-faq{break-inside:avoid}}
+/* Hesabyar 2.4 | checks, linked settlements, monthly plans & savings goals */
+.v24-quick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.v24-quick{appearance:none;display:flex;flex-direction:column;align-items:flex-start;text-align:start;border:1px solid var(--line);background:var(--surface, var(--card, rgba(255,255,255,.06)));border-radius:18px;padding:20px;min-width:0;gap:7px;cursor:pointer;color:var(--text);transition:transform .2s,border-color .2s,box-shadow .2s;font:inherit}
+.v24-quick:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 9px 28px rgba(0,0,0,.07)}
+.v24-quick>span{display:grid;place-items:center;width:38px;height:38px;border-radius:13px;color:var(--accent);background:var(--accent-faint)}
+.v24-quick strong{font-size:14px;line-height:1.7}
+.v24-quick small{font-size:11px;color:var(--muted);line-height:1.8}
+.v24-summary{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
+.v24-summary>div{border:1px solid var(--line);border-radius:16px;background:var(--surface,rgba(255,255,255,.03));padding:14px 20px;display:flex;flex-direction:column;min-width:155px;flex:1;gap:6px}
+.v24-summary small{color:var(--muted);font-size:11px}.v24-summary b{font-size:24px;font-weight:900;font-variant-numeric:tabular-nums}
+.v24-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px;margin-top:17px}
+.v24-item{padding:20px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.v24-item h4{margin:0;font-size:16px;font-weight:850;line-height:1.7;overflow-wrap:anywhere}
+.v24-main-amount{font-weight:900;font-size:28px;line-height:1.5;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.v24-main-amount small{font-size:12px;font-weight:650;color:var(--muted)}
+.v24-meta{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:11px;line-height:1.9;color:var(--muted)}
+.v24-meta span{overflow-wrap:anywhere}
+.v24-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:7px}
+.v24-actions .btn{padding:7px 11px;min-height:33px}
+.v24-actions .btn:disabled{opacity:.4;cursor:not-allowed}
+.v24-overview{display:flex;flex-direction:column;gap:4px;background:var(--accent-faint);padding:18px 20px;border-radius:16px;margin-bottom:16px;color:var(--text)}
+.v24-overview strong{font-size:26px;font-weight:900;color:var(--accent);line-height:1.5;overflow-wrap:anywhere}
+.v24-overview small{color:var(--muted);font-size:11px}
+.v24-list{max-height:55vh;overflow:auto;scrollbar-width:thin}
+.v24-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:12px;line-height:1.7}
+.v24-row:last-child{border-bottom:none}
+.v24-row>div{min-width:0;max-width:75%;display:flex;flex-direction:column;gap:1px}
+.v24-row b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.v24-row small{font-size:10px;color:var(--muted)}
+.v24-installments{margin:12px 0 8px;border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.v24-installments>summary{cursor:pointer;font-size:12px;font-weight:700;color:var(--accent)}
+.v24-installment{display:flex;justify-content:space-between;gap:8px;border-top:1px solid var(--line);padding:8px 0;font-size:11px;line-height:1.8}
+.v24-installment span:last-child{white-space:nowrap}
+.v24-attention{border-color:var(--accent);margin-bottom:15px}
+@media(max-width:980px){.v24-quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.v24-quick-grid{grid-template-columns:1fr}.v24-cards{grid-template-columns:1fr}.v24-summary>div{min-width:120px;padding:12px 14px}.v24-item{padding:17px}.v24-main-amount{font-size:24px}.v24-installment{flex-direction:column;gap:0}.v24-row>div{max-width:60%}}
+@media print{.v24-quick,.v24-actions,.v24-summary .btn{box-shadow:none!important}.v24-item{break-inside:avoid}}
+
+
+/* Hesabyar 2.4.1 — due reminders, check images, and optional PIN screen */
+.reminder-top-btn{position:relative;min-width:39px;min-height:39px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.reminder-top-btn:hover{border-color:var(--accent);color:var(--accent)}
+.reminder-counter{position:absolute;top:-7px;right:-6px;min-width:20px;height:20px;border-radius:16px;background:var(--accent);color:var(--on-accent,#fff);display:grid;place-items:center;padding:0 4px;font-size:10px;font-weight:800}
+.reminder-actions,.check-image-badges{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.reminder-item .pill.due-over{color:var(--danger,#c43d48);border-color:currentColor}
+.check-image-existing{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid var(--line);padding:10px;border-radius:13px;margin-top:12px}
+.check-image-existing img{width:115px;height:80px;object-fit:contain;border-radius:7px;background:var(--surface,#eee)}
+.check-image-filename{display:block;overflow-wrap:anywhere;margin-top:6px}
+.check-image-overlay{position:fixed;inset:0;z-index:7000;background:rgba(8,13,30,.85);display:flex;align-items:center;justify-content:center;padding:20px}
+.check-image-dialog{width:min(780px,96vw);max-height:94vh;overflow:auto;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:20px;padding:19px;box-shadow:0 25px 80px rgba(0,0,0,.3)}
+.check-image-dialog>img{width:100%;max-height:72vh;object-fit:contain;border-radius:13px;display:block;margin:12px 0;background:#efefef}
+body.hy-pin-locked{overflow:hidden!important}
+body.hy-pin-locked #app,body.hy-pin-locked #modal-root,body.hy-pin-locked #tour-root,body.hy-pin-locked #guide-welcome-root,body.hy-pin-locked #toast-root,body.hy-pin-locked #check-image-root{visibility:hidden!important;pointer-events:none!important}
+.pin-lock-overlay{position:fixed;inset:0;z-index:99000;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at 50% 0%,#233c63 0%,#0a1428 75%);color:#f5f8ff}
+.pin-lock-card{width:min(430px,96vw);max-height:94vh;overflow:auto;border:1px solid rgba(255,255,255,.17);border-radius:23px;background:rgba(255,255,255,.065);padding:30px;box-shadow:0 25px 85px rgba(0,0,0,.35);text-align:center;backdrop-filter:blur(18px)}
+.pin-lock-icon{width:65px;height:65px;border-radius:19px;background:rgba(255,255,255,.12);display:grid;place-items:center;margin:0 auto 16px}
+.pin-lock-card h2{font-size:25px;font-weight:900;margin:12px 0;color:#fff}
+.pin-lock-card p{font-size:13px;line-height:2;color:#bfcee2}
+.pin-lock-card form{text-align:start;margin-top:20px}
+.pin-lock-card .form-label{color:#f5f8ff}
+.pin-lock-card .pin-unlock-input{font-size:21px;letter-spacing:5px;text-align:center;direction:ltr;background:#f9fafb;color:#111827}
+.pin-lock-card .pin-unlock-btn{width:100%;margin-top:10px}
+.pin-lock-card .pin-lock-error{color:#ffb5b5;min-height:25px;text-align:center}
+.pin-lock-card .pin-lock-note{font-size:11px;margin-top:20px;line-height:1.8}
+@media(max-width:620px){.reminder-top-btn{min-width:35px;min-height:35px}.pin-lock-card{padding:23px}}
+@media print{.reminder-top-btn,.pin-lock-overlay,.check-image-overlay{display:none!important}}
